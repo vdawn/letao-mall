@@ -4,6 +4,10 @@
     margin-top: 150px;
 }
 
+.mb20{
+    margin-bottom:20px;
+}
+
 .lt_panel h4 {
     text-align: center;
 }
@@ -120,3 +124,4 @@ a:link, a:visited, a:hover, a:active {
     width: 45%;
     height: 400px;
 }
+
