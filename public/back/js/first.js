@@ -63,7 +63,7 @@ $(function () {
             categoryName:{
                 validators:{
                     notEmpty:{
-                        message:"一级分类名称不能为空"
+                        message:"一级分类名称不能空"
                     }
                 }
             }
