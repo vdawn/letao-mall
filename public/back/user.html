@@ -107,6 +107,7 @@
     </div>
 </div>
 
+<<<<<<< HEAD
 <div class="modal fade" tabindex="-1" id="userModal">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
@@ -125,6 +126,8 @@
     </div>
 </div>
 
+=======
+>>>>>>> user
 <script type="text/html" id="tpl">
     {{each rows v i}}
     <tr>
@@ -132,8 +135,12 @@
         <td>{{v.username}}</td>
         <td>{{v.mobile}}</td>
         <td>{{v.isDelete===1?"正常":"禁用"}}</td>
+<<<<<<< HEAD
         <!--把这个用户的id和删除状态存储在了标签上-->
         <td data-id="{{v.id}}" data-is-delete="{{v.isDelete}}">
+=======
+        <td>
+>>>>>>> user
             {{if v.isDelete===1}}
             <button class="btn btn-sm btn-danger">禁用</button>
             {{/if}}
