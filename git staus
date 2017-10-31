@@ -1,0 +1,35 @@
+[33mcommit 6a1dabe31fdf3a917edc6a18ff42c16110e39b41[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mindex[m[33m)[m
+Author: vdawn <36703813@qq.com>
+Date:   Tue Oct 31 02:21:33 2017 +0800
+
+    首页所有功能完成
+
+[33mcommit 7256bd1fd73b7331b30f627298d188873dd169da[m
+Author: vdawn <36703813@qq.com>
+Date:   Tue Oct 31 02:01:25 2017 +0800
+
+    完成退出功能侧边栏功能
+
+[33mcommit 665673c32145f30eb31f7bd98a59ee5145702a9f[m
+Author: vdawn <36703813@qq.com>
+Date:   Tue Oct 31 01:19:23 2017 +0800
+
+    侧边栏静态页
+
+[33mcommit faf7f66bbaa8a8beb01850622782393eed6b5cbc[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mlogin[m[33m)[m
+Author: vdawn <36703813@qq.com>
+Date:   Tue Oct 31 00:15:40 2017 +0800
+
+    登录功能完成了
+
+[33mcommit 0118b11764f325591f855eb29a75b5b735e65068[m
+Author: vdawn <36703813@qq.com>
+Date:   Mon Oct 30 22:37:55 2017 +0800
+
+    登录静态页面完成
+
+[33mcommit 9a4cdfe7600579fa1c5c844db9a2477cf86eb38b[m
+Author: vdawn <36703813@qq.com>
+Date:   Mon Oct 30 16:08:24 2017 +0800
+
+    初始化上传
