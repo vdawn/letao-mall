@@ -32,7 +32,12 @@ function renderSecond(id) {
 }
 
 
-$(".lt_category_l").on('click',li,function(){
-    $(this).addClass("now").siblings().removeClass(now);
+$(".lt_category_l").on('click',"li",function(){
+    $(this).addClass("now").siblings().removeClass('now');
+    //
+    var id=$(this).data("id");
+    renderSecond(id);
+
+    sc[1].scrollTo(0,0,500);
 
 });
