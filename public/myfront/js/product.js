@@ -18,7 +18,6 @@ $(function () {
             id:id
         },
         success:function (data) {
-            console.log(data);
             var temp = data.size.split("-");
             var sizeArray = [];
             for(var i = temp[0]; i <= temp[1]; i++){
@@ -40,5 +39,50 @@ $(function () {
 
         }
     });
+
+
+    //尺码选择功能
+    $(".mui-scroll").on("click", ".size", function () {
+        $(this).addClass("now").siblings().removeClass("now");
+    });
+
+
+
+    //添加到购物车功能
+    $(".btn_add_cart").on("click", function () {
+        //获取数据
+        var size = $(".size.now").html();
+        var num = $(".mui-numbox-input").val();
+
+        if(!size){
+            mui.toast("请选择尺码");
+            return;
+        }
+
+        //才发送ajax请求
+        $.ajax({
+            type:"post",
+            url:"/cart/addCart",
+            data:{
+                productId:id,
+                num:num,
+                size:size
+            },
+            success:function (data) {
+
+                if(data.success){
+                    mui.toast("添加成功了,");
+                }
+                if(data.error === 400){
+                    //跳转到login页面
+                    location.href = "login.html?retUrl="+location.href;
+                    //上文就是将当前的页面的地址也作为一个参数传过去
+                    //比如现在在a页面,在跳转到b页面的时候,把a的地址告诉b,b页面干完活后再回到a页面
+                }
+
+            }
+        });
+
+    })
 
 })
